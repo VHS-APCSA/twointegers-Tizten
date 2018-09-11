@@ -29,4 +29,13 @@ public class Twointegers
 	{
 		this.yang = yang;
 	}
+	public Twointegers arithmetic(Twointegers integer)
+	{
+		int sum = yin + yang;
+		int difference = yin - yang;
+		double product = yin * yang;
+		double quotient = (double) yin / yang;
+		Twointegers result = new Twointegers(yin, yang);
+		return result;
+	}
 }
