@@ -29,13 +29,29 @@ public class Twointegers
 	{
 		this.yang = yang;
 	}
-	public Twointegers arithmetic(Twointegers integer)
+	public String arithmetic()
 	{
 		int sum = yin + yang;
 		int difference = yin - yang;
 		double product = yin * yang;
 		double quotient = (double) yin / yang;
-		Twointegers result = new Twointegers(yin, yang);
-		return result;
+		return yin + " + " + yang + " = " + sum + ", " + 
+				yin + " - " + yang + " = " + difference + ", " +
+				yin + " * " + yang + " = " + product + ", " +
+				yin + " / " + yang + " = " + quotient;
+	}
+	public int larger()
+	{
+		if(yin > yang)
+			return yin;
+		else 
+			return yang;
+	}
+	public boolean isEven(int sum)
+	{
+		if(sum % 2 == 0)
+			return true;
+		else
+			return false;
 	}
 }
