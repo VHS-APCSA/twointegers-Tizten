@@ -54,4 +54,11 @@ public class Twointegers
 		else
 			return false;
 	}
+	public boolean isMultiple()
+	{
+		if(yin % yang == 0)
+			return true;
+		else
+			return false;
+	}
 }
