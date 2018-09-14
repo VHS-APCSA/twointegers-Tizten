@@ -1,14 +1,14 @@
-public class Twointegers
+public class TwoIntegers
 {
 	private int yin;
 	private int yang;
 	
-	public Twointegers()
+	public TwoIntegers()
 	{
 		yin = 0;
 		yang = 0;
 	}
-	public Twointegers(int yin, int yang)
+	public TwoIntegers(int yin, int yang)
 	{
 		this.yin = yin;
 		this.yang = yang;
@@ -47,8 +47,9 @@ public class Twointegers
 		else 
 			return yang;
 	}
-	public boolean isEven(int sum)
+	public boolean isEven()
 	{
+		int sum = yin + yang;
 		if(sum % 2 == 0)
 			return true;
 		else
