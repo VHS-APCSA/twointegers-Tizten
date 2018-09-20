@@ -3,11 +3,6 @@ public class TwoIntegers
 	private int yin;
 	private int yang;
 	
-	public TwoIntegers()
-	{
-		yin = 0;
-		yang = 0;
-	}
 	public TwoIntegers(int yin, int yang)
 	{
 		this.yin = yin;
@@ -40,12 +35,12 @@ public class TwoIntegers
 				yin + " * " + yang + " = " + product + ", " +
 				yin + " / " + yang + " = " + quotient;
 	}
-	public int larger()
+	public String larger()
 	{
 		if(yin > yang)
-			return yin;
+			return (yin + " is larger than " + yang);
 		else 
-			return yang;
+			return (yang + " is larger than " + yin);
 	}
 	public boolean isEven()
 	{

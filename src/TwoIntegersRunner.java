@@ -11,9 +11,13 @@ public class TwoIntegersRunner
 		System.out.println();
 		
 		TwoIntegers twoIntegers = new TwoIntegers(num1, num2);
-		twoIntegers.arithmetic();
-		twoIntegers.larger();
-		twoIntegers.isEven();
-		twoIntegers.isMultiple();
+		String arithmetic = twoIntegers.arithmetic();
+			System.out.println(arithmetic);
+		String larger = twoIntegers.larger();
+			System.out.println(larger + " is larger.");
+		boolean isEven = twoIntegers.isEven();
+			System.out.println("Sum is even = " + isEven + ".");
+		boolean isMultiple = twoIntegers.isMultiple();
+			System.out.println(num1 + " is a multiple of " + num2 + " = " + isMultiple + ".");
 	}
 }
